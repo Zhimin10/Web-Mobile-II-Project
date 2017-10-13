@@ -1,0 +1,791 @@
+/*
+Zhimin Lin
+2/24/2017
+Individual Project Part 1
+*/
+
+
+
+/*
+	my css file was linked to all my webpage 
+*/
+body{
+	font-family:"MV Boli";
+}
+
+#adi_titles {
+    position: relative;
+    animation-name: adi_titles;
+    animation-duration: 6s; 
+}
+
+@keyframes adi_titles {	
+    25%  { left:0; transform: rotate(3deg);}
+	50%  { left:0; transform: rotate(-3deg);}
+	75%  { left:0; transform: rotate(3deg);}
+	100%  { left:0; transform: rotate(-3deg);}
+}
+
+
+#window_nav{
+     list-style-type: none;
+	margin: 0;
+    padding: 0;
+	background-color:lightblue;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto; 
+	text-align:center;
+	font-size:17px;
+	font-weight: bold;
+}
+
+#window_nav li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+	margin-top:20px;
+}
+
+
+
+
+#menu{
+	display:none; 
+}
+
+
+
+#window_nav > li:not(:last-child):after{
+	content: "_____________ ";
+}
+
+#window_nav a:hover { 
+    color: white;
+	font-size:22px;
+	text-shadow:5px 1px 1px #8eb0e5;
+}
+
+#window_nav a.active { 
+    color: yellow;
+	font-size:27px;
+}
+
+
+
+#content_area{
+	margin-left:220px;
+	padding-left:4px;
+	border:solid; 
+	border-color:white;	
+	font-family: "Times New Roman", Georgia, Serif;
+	margin-right:100px;
+}
+
+#title_area{
+	margin-left:220px;
+	text-align:left;
+	border:solid;
+	border-color:white;
+	border-bottom-color:red;
+	height:80px;
+	Padding-top:10px;
+	Padding-bottom:10px;
+	font-size:50px;
+	margin-right:20px;
+}
+
+.top_p{
+	width:40px;
+	height:40px;
+	position:fixed;
+	bottom:5px;
+	right:5px;
+}
+
+.footer{
+	margin-top:50px;
+	text-align:center;
+}
+
+
+
+
+
+/*---------------------------------------------------------index.html--------------------------------------------*/
+
+
+table {font-family: arial, sans-serif;
+		border-collapse: collapse;
+		background-color:#edf0f4;
+		float:left;
+		margin-right:20px; 
+		width:450px;
+		margin-top:5px;
+}
+
+td, th {border: 1px solid black;
+	text-align: left;
+	padding: 8px;
+}
+
+.table tr:nth-child(even) {
+					background-color: Lavender;
+}
+
+#tables{
+	display:inline-block;
+}
+
+#index_box{
+	border-style: solid;
+    border-width: 1px;
+	border-color:white;
+	width:1000px;
+	height:400px;
+	margin-bottom:20px;
+}
+
+#map{
+	height:480px;
+	width:680px;
+	margin:20px;
+	
+	
+}
+
+
+.rochester_img{
+	display:none;
+	max-width:1000px;
+	max-height:400px;
+	
+}
+
+#roc_1,#roc_2,#roc_3,#roc_4,#roc_5{
+	width:1000px;
+	height:400px;
+}
+
+/*--------------------------------------------------college.html--------------------------------------------------------------------------------*/
+ 
+.college_box{
+	 width:100%;
+	 margin:5px;
+	 float:left;
+	 text-align:left;
+	 padding:10px;
+}
+
+.img_colleges{
+	float:left;
+	margin-right:10px;
+	width:394px;
+	height:308px;
+}
+
+.colleges_name{
+	font-weight: bold;
+	font-size:20px;
+}
+
+.list{
+	color:grey;
+	font-weight: bold;
+}
+
+a:hover {
+    color: #a5cdef;
+}
+
+/*-----------------------------------------------------------------------------food.html---------------------------------------*/
+.food{height: 400px;
+	 margin-top:5.5px;
+	 margin-bottom:16px;
+	 margin-right:20px;
+}
+				
+.food_img{width: 300px;
+		height: 400px;
+		margin:10px;
+		float:left;
+}
+			
+							
+.food_information{
+	 text-align:left;
+}	
+	 
+.small_pic{width:180px;
+			height: 155px;
+			border: 2px solid orange;
+			float:left;
+			margin-left:5.5px;	
+			display:inline;
+}
+
+.Introduction_Q{Color:#88adea;
+				line-height: 40px;}			
+
+#pic1{background-image: url(image/han_noodle1.jpg);
+	  background-size:100% 100%;}
+	  
+#pic2{background-image: url(image/han_noodle2.jpg);
+	  background-size:100% 100%;}
+	 
+#pic3{background-image: url(image/chen1.jpg);
+	  background-size:100% 100%;}
+	  
+#pic4{background-image: url(image/chen2.jpg);
+	  background-size:100% 100%;}
+	  
+#pic5{background-image: url(image/bento_box.jpg);
+	  background-size:100% 100%;}
+	 
+#pic6{background-image: url(image/hot_pot.jpg);
+	  background-size:100% 100%;}
+	  
+#pic7{background-image: url(image/mala.jpg);
+	  background-size:100% 100%;}
+	 
+#pic8{background-image: url(image/white1.jpg);
+	  background-size:100% 100%;}
+	 
+#pic9{background-image: url(image/white2.jpg);
+	  background-size:100% 100%;}
+	  
+#pic10{background-image: url(image/white3.jpg);
+	  background-size:100% 100%;}
+	  
+.bold_text{
+	font-weight:bold;
+	color:black;
+}
+
+#A_pic1{
+	background-image: url(image/bbq1.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic2{
+	background-image: url(image/bbq2.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic3{
+	background-image: url(image/bbq3.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic4{
+	background-image: url(image/eddie1.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic5{
+	background-image: url(image/eddie2.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic6{
+	background-image: url(image/eddie3.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic7{
+	background-image: url(image/jines1.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic8{
+	background-image: url(image/jines2.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic9{
+	background-image: url(image/jines3.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic10{
+	background-image: url(image/revelry1.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic11{
+	background-image: url(image/revelry2.jpg);
+	  background-size:100% 100%;
+}
+
+#A_pic12{
+	background-image: url(image/revelry3.jpg);
+	  background-size:100% 100%;
+}
+
+#B_pic1{
+	background-image: url(image/taichi1.jpg);
+	  background-size:100% 100%;
+}
+
+#B_pic2{
+	background-image: url(image/taichi2.jpg);
+	  background-size:100% 100%;
+}
+
+#B_pic3{
+	background-image: url(image/chacha1.jpg);
+	  background-size:100% 100%;
+}
+
+#B_pic4{
+	background-image: url(image/chacha2.jpg);
+	  background-size:100% 100%;
+}
+
+/*----------------------------------------------------------------attraction.html--------------------------------------------*/
+
+.attraction_box{
+	 width:100%;
+	 margin:5px;
+	 float:left;
+	 text-align:left;
+	 
+}
+
+
+.attraction_img{
+	float:left;
+	margin-right:10px;
+	
+	width:394px;
+	height:308px;
+}
+/*----------------------------------------------------------------entertainment.html--------------------------------------------*/
+
+.entertainment_box{
+	width:100%;
+	 margin:5px;
+	 float:left;
+	 text-align:left;
+	
+}
+
+.entertainment_img{
+	float:left;
+	margin-right:10px;
+	
+	width:394px;
+	height:308px;
+}
+
+/*-----------------------------------------------------------------shopping.html----------------------------------*/
+.shopping_box{
+	width:100%;
+	 margin:5px;
+	 float:left;
+	 text-align:left;
+}
+
+.shopping_img{
+	float:left;
+	margin-right:10px;
+	width:394px;
+	height:308px;
+}
+
+/*--------------------------------------------------------------hotel.html----------------------------------------*/
+
+.hotel_box{
+	width:100%;
+	 margin:15px;
+	 float:left;
+	 text-align:left;
+}
+
+.hotel_img{
+	float:left;
+	margin-right:10px;
+	width:394px;
+	height:308px;
+}
+
+.hotel_name{
+	font-weight:bold;
+	font-size:30px;
+}
+/*-------------------------------------------------------traffic.html---------------------------------------------------*/
+.traffic_box{
+	width:100%;
+	 margin:15px;
+	 float:left;
+	 text-align:left;
+}
+
+.traffic_img{
+	float:left;
+	margin-right:10px;
+	width:394px;
+	height:308px;
+}
+
+.traffic_name{
+	font-weight:bold;
+	font-size:30px;
+}
+
+/*--------------------------------------------------references.html-----------------------------------------------------------*/
+.references{
+	text-align:left;
+}
+
+.link{
+	color:#00BFFF;
+}
+
+/*------------------comment----------------*/
+
+.comment_box{
+	border: 2px solid #FFF0F5;
+    border-radius: 30px;
+	background-color:#FFF0F5;
+	width:65%;
+	overflow:auto;
+	margin:auto;
+	padding:15px;
+	margin-bottom:15px;
+}
+
+.comment_name{
+	text-decoration: underline;
+	font-weight:bold;
+	font-size:25px;
+}
+
+.comment_comment{
+	font-size:20px;
+	margin-left:20px;
+}
+
+.name_fieldset{
+	width:600px;
+	margin:auto; 
+	border: 1px solid black;
+	height:60px;
+}
+
+.comment_fieldset{
+	width:600px;
+	margin:auto; 
+	border: 1px solid black;
+	height:170px;
+}
+
+
+#name{
+	width:600px;
+	border: 1px solid white;
+}
+
+#comment{
+	width:600px;
+	margin:auto;
+	height:130px;
+	resize: none;
+	border: 1px solid white;
+}
+
+.submit_button{
+	border-radius: 20px;
+	background-color:#F0F8FF;
+	width:70px;
+	margin:auto;
+	height:30px;
+	outline: 0 none;
+}
+
+.button_div{
+	text-align: center;
+	margin-bottom:10px;
+	margin-top:5px;
+}
+
+.homepage_link{
+	margin-bottom:30px;
+	display:block;
+	text-align:right;
+	margin-right:40px;
+}
+
+.comment_link{
+	margin-bottom:30px;
+	display:block;
+	text-align:right;
+	margin-right:40px;
+}
+
+#comment_hint{
+	color:red;
+	opacity: 0;
+	text-align:center;
+}
+
+.comment_content{
+	margin-left:20%;
+	margin-right:20%;
+}
+
+.comment_link_mobile{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1272px) 
+{
+	
+	body{
+		font-family: "Times New Roman", Georgia, Serif;
+	}
+	
+	#content_area{
+		width:100%;
+		margin:0;
+		font-size:30px;
+	}
+	
+	#window_nav{
+		display:none;
+	}
+	
+	#title_area{
+		margin:0;
+		text-align:center;
+		width:100%;
+		margin-right:0;
+		font-size:70px;
+	}
+	
+	#index_box{
+		width:100%;
+		height:400px;
+	}
+	
+	.rochester_img{
+		display:none;
+	}
+	
+	#roc_1,#roc_2,#roc_3,#roc_4,#roc_5{
+		width:100%;
+		height:100%;
+		
+	}
+	
+	
+	#map{
+		width:90%;
+		margin:auto;
+	}
+	
+	#summary{
+		padding-bottom:40px;
+		padding-right:40px;
+		padding-left:40px;
+	}
+	
+	.table{
+		width:99%;
+		margin:auto;
+		margin-bottom:20px;
+		
+	}
+	
+	.table td {
+		text-align:center;
+	}
+	
+	.table th {
+		text-align:center;
+	}
+	
+	#tables_c{
+		width:100%; 
+	}
+
+	.comment_link{
+		display:none;
+	}
+	
+	.comment_link_mobile{
+		display:block;
+		font-size:200%;
+		text-align:right;
+	}
+	
+	.comment_link_mobile a{
+		color: grey;
+	}
+	
+	.top_p{
+	width:70px;
+	height:70px;
+	position:fixed;
+	bottom:5px;
+	right:5px;
+	}
+	
+	.img_colleges, .attraction_img, .shopping_img, .hotel_img, .traffic_img, .entertainment_img, .food_img{
+		width:100%;
+		height:auto;		
+	}
+	
+	
+	.college_box, .attraction_box, .shopping_box, .hotel_box, .traffic_box, .entertainment_box, .food{
+		margin:0;
+		padding:0;
+		margin-bottom:100px;
+		padding-right:20px;
+		
+	}
+	
+	#reference_box{
+		margin:0;
+		padding:0;
+	}
+	
+	.small_pic{
+			display:none;
+	}
+	
+	.food{
+		height:auto;
+	}
+	
+	
+	.food_information{
+	 text-align:center;
+	}	
+	
+	#window_nav{
+		display:none;
+	}
+	
+	#menu{
+		display:inline-block;
+		font-size:300%;
+		margin:0;
+	}
+	
+	
+	#mobile_nav{
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		text-align:center;
+		font-size:30px;
+		font-weight: bold;
+	}
+
+	#mobile_nav li a {
+		display: block;
+		color: #000;
+		text-decoration: none;
+		border: 1px solid black; 
+		margin:20px;
+		padding:20px;
+		border-radius:25px;
+		
+	}
+	.comment_content{
+		margin:0;
+		padding:0;
+	}
+	
+	#mobile_nav a {
+		background-color:#9ebae6;
+	}
+	
+	.comment_title{
+		font-size:80px;
+	}
+	
+	.homepage_link{
+		font-size:30px;
+		float:right;
+		margin:0;
+	}
+	
+	.name_fieldset, .comment_fieldset{
+		width:90%;
+		margin:0;
+		font-size:30px;
+		margin:10px;
+	}
+	
+	#comment_hint{
+		font-size:30px;
+	}
+	
+	.submit_button{
+		width:130px;
+		height:50px;
+		font-size:25px;
+	}
+	
+	.comment_box{
+		width:90%;
+	}
+	
+	.comment_name{
+		font-size:200%;
+	}
+	
+	.comment_comment{
+		font-size:200%;
+	}
+	
+	#menu img{
+		width:10vw;
+	}
+	
+
+
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
